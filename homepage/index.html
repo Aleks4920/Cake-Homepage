@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <!-- links for side menu -->
+    <div id="mymenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+        <a href="index.html">home</a>
+        <a href="about.html">About</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <!-- creat very top of page -->
+    <span style="position: fixed;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <p class="cupcake">
+        <img class="cupcake" src="imgs/cp.png">
+    </p>
+
+    <!-- banner  -->
+    <div class="bann">
+        <h1 style="font-size:50px">Susans Cakes</h1>
+        <form>
+            <input class="MyButton" type="button" value="My Story" onclick="window.location.href='about.html'" />
+        </form>
+        <p> </p>
+        <br>
+    </div>
+    <br>
+
+    <!-- grid to place the 3 cards inside and have them evenly spaced -->
+    <div class="grid-container">
+        <div class="card" style="width: 18rem; height:28rem;" padding-left:50px>
+            <img class="card-img" src="imgs/wedding.jpeg">
+            <div class="card-body">
+                <h5 class="card-title">Weddings</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button>Book Now!</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height:28rem;">
+            <img class="card-img" src="imgs/party.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Parties</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button>Book Now!</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; height:28rem;">
+            <img class="card-img" src="imgs/bday.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Birthdays</h5>
+                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button>Book Now!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript for menu -->
+    <script>
+        function openNav() {
+            document.getElementById("mymenu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mymenu").style.width = "0";
+        }
+    </script>
+
+    <!-- info card at bottom -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img src="imgs/person.png" alt="Card image cap ">
+                        </div>
+                        <div class="card-body ">
+                            <h2 class="card-title ">My Mission</h4>
+                                <p class="card-text ">I love making cakes and bringing joy to people</p>
+                        </div>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-muted ">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+</body>
+<!-- static footer -->
+<footer>contact: suscakes@gmail.com</footer>
+
+
+
+
+</html>
+<!-- Aleks Zheleznov -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+    <!-- side navigation menu -->
+    <div id="mymenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+        <a href="index.html">home</a>
+        <a href="about.html">About</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <span style="position: fixed;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <p class="cupcake">
+        <img class="cupcake" src="imgs/cp.png">
+    </p>
+    <script>
+        function openNav() {
+            document.getElementById("mymenu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mymenu").style.width = "0";
+        }
+    </script>
+    <div class="bann">
+        <h1 style="font-size:50px">Booking</h1>
+        <p> </p>
+        <br>
+    </div>
+    <!-- fill out forms -->
+    <br>
+    <div1>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+            <label for="EventType">Event Type</label>
+            <select id="EventType" name="EventType">
+      <option value="australia">Wedding</option>
+      <option value="canada">Birthday</option>
+      <option value="usa">Other Party</option>
+      <option value="usa">Other</option>
+    </select>
+            <!-- submit button that is not yet rooted -->
+            <input type="submit" value="Submit">
+        </form>
+    </div1>
+</body>
+
+<!-- footer -->
+<footer>contact: suscakes@gmail.com</footer>
+
+</html>

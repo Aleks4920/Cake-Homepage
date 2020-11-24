@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- side nav menu-->
+    <div id="mymenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a>
+        <a href="index.html">home</a>
+        <a href="about.html">About</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <span style="position: fixed;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <p class="cupcake">
+        <img class="cupcake" src="imgs/cp.png">
+    </p>
+    <script>
+        function openNav() {
+            document.getElementById("mymenu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mymenu").style.width = "0";
+        }
+    </script>
+    <!-- main banner-->
+    <div class="bann">
+        <h1 style="font-size:50px">About</h1>
+        <p> </p>
+        <br>
+    </div>
+    <br>
+    <!-- paragraph for description-->
+    <p>This is a paragraph of Susans life story</p>
+</body>
+
+<!-- footer -->
+<footer>contact: suscakes@gmail.com</footer>
+
+</html>
